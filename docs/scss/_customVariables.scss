@@ -1,0 +1,234 @@
+// Color system
+
+$white:    #fff !default;
+$gray-100: #a49f9f;
+$gray-200: #f9f9f9;
+$gray-300: #999;
+$gray-400: #eee;
+$gray-500: #adb5bd !default;
+$gray-600: #1f1f1f;
+$gray-700: #0a0a0a;
+$gray-800: #eee;
+$gray-900: #1b1b1b;
+$gray-1000: #999999;
+$gray-1001: #f1f1f1;
+$black:    #000 !default;
+
+$grays: ();
+
+
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #eb2c25;
+$orange:  #fd7e14 !default;
+$yellow:  #ffb24c;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: ();
+
+
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-200;
+$dark:          $gray-800 !default;
+
+$theme-colors: ();
+
+
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+
+// Spacing
+$spacer: 5px;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: $spacer,
+    2: ($spacer * 2),
+    3: ($spacer * 3.2),
+    4: ($spacer * 4),
+    5: ($spacer * 5),
+    6: ($spacer * 6),
+    7: ($spacer * 7),
+    8: ($spacer * 8),
+    9: ($spacer * 9),
+    10: ($spacer * 10),
+    11: ($spacer * 11),
+    12: ($spacer * 12),
+    13: ($spacer * 13),
+    14: ($spacer * 14),
+    15: ($spacer * 15),
+    16: ($spacer * 16),
+    17: ($spacer * 17),
+    18: ($spacer * 18),
+    19: ($spacer * 19),
+    20: ($spacer * 20),
+    21: ($spacer * 21),
+    22: ($spacer * 22),
+    23: ($spacer * 23),
+    24: ($spacer * 24),
+    25: ($spacer * 25),
+    26: ($spacer * 26),
+    27: ($spacer * 27),
+    28: ($spacer * 28),
+    29: ($spacer * 29),
+    30: ($spacer * 30),
+    31: ($spacer * 31),
+    32: ($spacer * 32),
+    33: ($spacer * 33),
+    34: ($spacer * 34),
+    35: ($spacer * 35)
+  ),
+  $spacers
+);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: ();
+$sizes: map-merge(
+  (
+    20: 20%,
+    25: 25%,
+    33: 33.333%,
+    50: 50%,
+    66: 66.667%,
+    80: 80%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
+
+
+
+//navbar
+$navbar-toggler-padding-y:          (4px);
+$navbar-toggler-padding-x:          (9px);
+
+$navbar-light-color:                $gray-300;
+$navbar-light-hover-color:          $red;
+$navbar-light-active-color:         $red;
+$navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$white}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23");
+$navbar-light-toggler-border-color: $white;
+
+
+
+
+// Typography
+
+$font-family-sans-serif:      'Roboto' , -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-family:        'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base:            $font-family-sans-serif;
+
+$fontFamilyRoboto:       $font-family-sans-serif;
+$fontFamilyPoppins:      $headings-font-family;
+
+
+$font-size-base:              (14);
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+
+$line-height-base:            1.78;
+
+$h1-font-size:                (34);
+$h2-font-size:                (24);
+$h3-font-size:                (20);
+$h4-font-size:                (18);
+$h5-font-size:                (16);
+$h6-font-size:                (14);
+
+$headings-color:              $gray-900;
+
+
+//button
+$btn-font-family:             $fontFamilyPoppins;
+$btn-font-size:               (12);
+
+
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1230px
+);
+
+//@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+//@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+);
+
+
+
+// Form
+
+
+$input-placeholder-color:               $gray-1000;
+$input-focus-bg:                        $gray-1001;
