@@ -11,7 +11,7 @@ $(document).ready(function() {
 		if (event.isDefaultPrevented()) {
 			// handle the invalid form...
 			formError();
-			submitMSG(false, "Please Follow Error Messages and Complete as Required");
+			submitMSG(false, "Por favor revise el mensaje de error");
 		} else {
 			// everything looks good!
 			event.preventDefault();
